@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Breath</string>
+    <string name="min_today">%d min today</string>
+</resources>

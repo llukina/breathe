@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/breaths_taken_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:text="7 breaths"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/last_breath_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breaths_taken_txt"
+        android:layout_marginLeft="24dp"
+        android:text="Last at 23:45"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/today_minutes_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_breath_txt"
+        android:layout_marginLeft="24dp"
+        android:text="4 minutes today"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/one_minute_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/today_minutes_txt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:text="1 MIN"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/breatheimg" />
+
+    <TextView
+        android:id="@+id/guide_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Breathe"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="Start"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
